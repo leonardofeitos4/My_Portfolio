@@ -30,7 +30,18 @@ body{
     cursor: pointer;
     transition: 2s;
 }
-.btn-contato button:hover{
+
+h2.titulo{
+    columns: black;
+    font-size: 50px;
+    text-align: center;
+    margin: 85px;
+}
+
+h2.titulo span{
+    color:rgb(133, 255, 96);
+}
+button:hover{
     box-shadow: 0px 0px 8px #000000;
     transform: scale(1.10);
 }
@@ -107,4 +118,80 @@ section.Topo-do-site .flex{
     100%{
         top: 30px;
     } 
+}
+/* Estilo das especialidades */
+section.especialidades{
+    padding: 40px 1%;
+}
+section.especialidades .flex{
+    gap: 300px;
+}
+
+.especialidades-box {
+    color: #000;
+    padding: 20px;
+    border-radius: 35px;
+    border: 2px solid;
+    margin-top: 20px;
+    transition: .4s;
+}
+
+.especialidades-box p {
+    list-style-type: none; /* Remover marcadores padrão */
+}
+
+.especialidades-box li {
+    margin-bottom: 15px; /* Adicionar espaço entre os itens da lista */
+}
+.especialidades .especialidades-box:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 30px #00000075;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 30px;
+    color: rgb(133, 255, 96);
+}
+.especialidades .especialidades-box h3{
+    font-size: 30px;
+    margin: 30px 0;
+}
+/* Estilo do sobre */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #000;
+    margin: -100px;
+}
+.sobre .txt-sobre h2{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+.sobre .txt-sobre h2 span{
+    color: rgb(133, 255, 96);
+    display: block;
+    
+}
+.sobre .txt-sobre p{
+    margin: 15px 0;
+    text-align: justify;
+}
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color:rgb(133, 255, 96);
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .4s;
 }
