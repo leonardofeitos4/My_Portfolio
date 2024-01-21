@@ -195,3 +195,115 @@ section.sobre .flex {
     margin: 0 5px;
     transition: .4s;
 }
+
+/* Estilo Portfolio */
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0px 0px 40px 10px #837f7f;
+}
+section.portfolio .flex{
+   justify-content: space-around;
+   margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: rgb(133, 255, 96);
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+
+}
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 15, 15, 0.509);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .7s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+/* Abaixo de 1020px */
+@media screen and (max-width: 1020px){
+
+    .flex{
+        flex-direction: column-reverse;
+    }
+    h2.titulo{
+        columns: black;
+        font-size: 30px;
+        line-height: 40px;
+        margin: 5px;
+    }
+    
+    /* cabeçalho */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+    /* Topo do site */
+    section.Topo-do-site .flex{
+        gap: 40px;
+    }
+    section.Topo-do-site{
+        padding: 20px 8%;
+    }
+    .Topo-do-site h1{
+        color: rgb(0, 0, 0);
+        font-size: 35px;
+    }
+    .Topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+    /* Estilo das especialidades */
+    section.especialidades{
+    padding: 100px 13%;
+    }
+    /* Estilo do sobre */
+    section.sobre {
+        padding: 120px 38%;
+    }
+    .sobre .txt-sobre h2{
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+   /* Certifique-se de não haver outras regras conflitantes para .img-sobre img */
+    .img-sobre img {
+        max-width: -100%; /* Alterado para um valor positivo, ajuste conforme necessário */
+        margin: -100px 0 100px; /* Ajuste o valor de margin conforme necessário */
+    }
+    /* Portfolio */
+    section.portfolio{
+        padding: 80px 8%;
+    }
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    section.portfolio .flex{
+        gap: 60px;
+     }
+}
+
