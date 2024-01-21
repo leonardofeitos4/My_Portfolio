@@ -244,7 +244,7 @@ section.portfolio .flex{
     opacity: 1;
 }
 /* Abaixo de 1020px */
-@media screen and (max-width: 1057px){
+@media screen and (max-width: 1020px){
 
     .flex{
         flex-direction: column-reverse;
